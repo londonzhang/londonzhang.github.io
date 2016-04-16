@@ -1,11 +1,28 @@
-<!DOCTYPE html>
-
+<!DOCTYPE HTML>
+<html>
 <head>
-<link rel="stylesheet" type="text/css" href="main.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A simple example</title>
+    <link rel="stylesheet" href="css/pannellum.css"/>
+    <script type="text/javascript" src="js/pannellum.js"></script>
+    <style>
+    #panorama {
+        width: 1080x;
+        height: 720px;
+    }
+    </style>
 </head>
-
 <body>
-<p> London Zhang 2016 whatsup lol </p>
-</body>
 
+<div id="panorama"></div>
+<script>
+pannellum.viewer('panorama', {
+    "type": "equirectangular",
+    "panorama": "images/examplepano.jpg",
+    "autoLoad": true,
+});
+</script>
+
+</body>
 </html>
